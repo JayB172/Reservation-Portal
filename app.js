@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 mongoose.connect("mongodb://localhost:27017/reservationDB", {useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connect("mongodb+srv://Admin-JB:Jay8308145340@cluster0-oubaj.mongodb.net/reservationDB?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true });
+
 
 const resvSchema = new mongoose.Schema({
   name : String,
